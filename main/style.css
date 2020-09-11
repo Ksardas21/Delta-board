@@ -105,9 +105,11 @@
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff') format('woff'),
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf') format('truetype'),
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.svg#BOG-Light') format('svg');font-weight:300;font-style:normal;font-display:swap;}
+
 :root {
     --main-bg-color: #F9F9F9;
     --main-color: #650AED;
+    --main-color-light: #6D0BFF;
     --main-font-color: #333333;
 }
 html{
@@ -134,8 +136,8 @@ header{
 .header-section{
     width: 1400px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 .logo-index{
     margin-left: 2.5%;
@@ -145,42 +147,80 @@ header{
     align-items: center;
     width: 65px;
 }
-.links{
-    display: flex;
-}
-.entrance{
-    margin-right: 5%;
-    font-size: 15px;
-    width: 135px;
-    line-height: 35px;
-    background: white;
-    text-align: center;
-    border-radius: 10px;
-    border: 2.5px solid var(--main-font-color);
-    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
-    text-decoration: none;
-    color: var(--main-font-color);
-}
-main{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-.main-section{
-    margin-left:2.5%;
+.profile-top{
     margin-right: 2.5%;
-    max-width: 1400px;
-    font-family: BOG;
-    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
 }
-.first-article{
-    max-width: 1400px;
-    width: 100vw;
-    margin-left: 2.5%;
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-items: center;
     margin-right: 2.5%;
+    height: 60px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
 }
-.main-section p{
-    max-width: 700px;
-    margin-left: 2.5%;
-    margin-right: 4.5%;
+.header-nav:hover{
+    background: var(--main-color-light);
+}
+.top-profile-name{
+    margin: 0 7.5px 0 10px;
+    font-size: 12.5px;
+    color: white;
+}
+.profile-image{
+    width: 32.5px;
+    background:var(--main-bg-color);
+    border-radius: 5px;
+    margin-right: 7.5px;
+}
+.dropdown-icon{
+    margin-right: 10px;
+}
+#options{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    background: var(--main-bg-color);
+    border-radius: 5px;
+    top: 80px;
+    font-size: 17.5px;
+    padding: 10px;
+    box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: ease-in-out .125s;
+}
+#options.active{
+    top: 65px; 
+    opacity: 1;
+    transition: ease-in-out .25s;
+}
+.profile-parameters{
+    font-family: BOG Headline;
+}
+.setting-buttons{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    transition: ease-in-out .1s;
+}
+.setting-buttons:hover{
+    background: #F2F2F2;
+}
+.setting-buttons:hover .setting-icons{
+    background: #D8DADF;
+}
+.setting-icons{
+    width: 21px;
+    margin-right: 7.5px;
+    background: #E4E6EB;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in-out .15s;
 }
