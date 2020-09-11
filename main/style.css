@@ -226,3 +226,21 @@ header{
     cursor: pointer;
     transition: ease-in-out .15s;
 }
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.main-section{
+    margin-left:2.5%;
+    margin-right: 2.5%;
+    max-width: 1400px;
+    font-family: BOG;
+    font-weight: 500;
+}
+.build-space{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
