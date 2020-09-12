@@ -131,7 +131,6 @@ body{
     font-weight: 700;
     background: var(--main-bg-color);
     font-family: BOG, sans-serif;
-    transition: ease-out 250ms;
 }
 header{
     position: absolute;
@@ -169,7 +168,6 @@ header{
     margin-right: 2.5%;
     height: 60px;
     cursor: pointer;
-    transition: ease-in-out .25s;
 }
 .header-nav:hover{
     background: var(--main-color-light);
@@ -201,13 +199,11 @@ header{
     font-size: 17.5px;
     padding: 10px;
     box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-    transition: ease-in-out .25s;
 }
 #options.active{
     visibility: visible;
     top: 65px; 
     opacity: 1;
-    transition: ease-in-out .25s;
 }
 .profile-parameters{
     font-family: BOG Headline;
@@ -219,7 +215,6 @@ header{
     cursor: pointer;
     border-radius: 5px;
     padding: 0 5px 0 5px;
-    transition: ease-in-out .1s;
 }
 .setting-buttons:hover{
     background: var(--button-hover);
@@ -231,14 +226,12 @@ header{
     padding: 4px;
     border-radius: 50%;
     cursor: pointer;
-    transition: ease-in-out .15s;
 }
 .setting-buttons:hover .setting-icons{
     background: var(--button-icon-hover);
 }
 .profile-parameters{
     color: var(--main-font-color);
-    transition: ease-in-out .25s;
 }
 main{
     display: flex;
@@ -269,7 +262,7 @@ body.dark-mode{
 }
 body.dark-mode #options{
     box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(0, 0, 0, 0.5);
-    transition: ease-in-out .25s;background: var(--main-dark-bg-color);
+    background: var(--main-dark-bg-color);
     color: var(--main-dark-font-color)
 }
 body.dark-mode .setting-buttons:hover{
