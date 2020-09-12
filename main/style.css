@@ -111,6 +111,16 @@
     --main-color: #650AED;
     --main-color-light: #6D0BFF;
     --main-font-color: #333333;
+    --white: #FFFFFF;
+    --black: #000000;
+    --button-icon: #E4E6EB;
+    --button-hover: #F2F2F2;
+    --button-icon-hover: #D8DADF;
+    --main-dark-bg-color: #181818;
+    --main-dark-font-color:  #ECF0F1;
+    --dark-button-icon: #272520;
+    --dark-button-hover: #0d0d0d;
+    --dark-button-icon-hover: #1b1914;
 }
 html{
     scroll-behavior: smooth;
@@ -167,7 +177,7 @@ header{
 .top-profile-name{
     margin: 0 7.5px 0 10px;
     font-size: 12.5px;
-    color: white;
+    color: var(--white);
 }
 .profile-image{
     width: 32.5px;
@@ -191,7 +201,7 @@ header{
     font-size: 17.5px;
     padding: 10px;
     box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-    transition: ease-in-out .125s;
+    transition: ease-in-out .25s;
 }
 #options.active{
     visibility: visible;
@@ -212,19 +222,23 @@ header{
     transition: ease-in-out .1s;
 }
 .setting-buttons:hover{
-    background: #F2F2F2;
-}
-.setting-buttons:hover .setting-icons{
-    background: #D8DADF;
+    background: var(--button-hover);
 }
 .setting-icons{
     width: 21px;
     margin-right: 7.5px;
-    background: #E4E6EB;
+    background: var(--button-icon);
     padding: 4px;
     border-radius: 50%;
     cursor: pointer;
     transition: ease-in-out .15s;
+}
+.setting-buttons:hover .setting-icons{
+    background: var(--button-icon-hover);
+}
+.profile-parameters{
+    color: var(--main-font-color);
+    transition: ease-in-out .25s;
 }
 main{
     display: flex;
@@ -234,13 +248,42 @@ main{
 .main-section{
     margin-left:2.5%;
     margin-right: 2.5%;
-    max-width: 1400px;
+    width: 1400px;
     font-family: BOG;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
 }
 .build-space{
-    width: 200px;
-    height: 150px;
-    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    border: 1px solid var(--black);
+    margin-left: 100px;
+    margin-top: 100px;
     border-radius: 5px;
+}
+/* DARK MODE*/
+body.dark-mode{
+    background: var(--main-dark-bg-color);
+    color: var(--main-dark-font-color)
+}
+body.dark-mode #options{
+    box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out .25s;background: var(--main-dark-bg-color);
+    color: var(--main-dark-font-color)
+}
+body.dark-mode .setting-buttons:hover{
+    background: var(--dark-button-hover);
+}
+body.dark-mode .setting-icons{
+    background: var(--dark-button-icon);
+}
+body.dark-mode .setting-buttons:hover .setting-icons{
+    background: var(--dark-button-icon-hover);
+}
+body.dark-mode .build-space{
+    border:1px solid var(--white);
+}
+body.dark-mode .profile-parameters{
+    color: var(--main-dark-font-color);
 }
