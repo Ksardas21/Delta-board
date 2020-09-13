@@ -175,7 +175,7 @@ main{
 }
 .first-article{
     max-width: 1400px;
-    width: 100vw;
+    width: 95vw;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
@@ -183,4 +183,14 @@ main{
     max-width: 700px;
     margin-left: 2.5%;
     margin-right: 4.5%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-section{
+    background: #EDF1F3;
+    height: 100px;
 }
