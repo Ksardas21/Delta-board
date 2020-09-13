@@ -117,10 +117,11 @@
     --button-hover: #F2F2F2;
     --button-icon-hover: #D8DADF;
     --main-dark-bg-color: #181818;
+    --main-dark-color: #202020;
+    --main-dark-color-light: #383838;
     --main-dark-font-color:  #ECF0F1;
-    --dark-button-icon: #272520;
-    --dark-button-hover: #0d0d0d;
-    --dark-button-icon-hover: #1b1914;
+    --dark-button-icon: #333336;
+    --dark-button-icon-hover: #4C4C4C;
 }
 html{
     scroll-behavior: smooth;
@@ -141,6 +142,7 @@ header{
     display: flex;
     justify-content: center;
     background: var(--main-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1)
 }
 .header-section{
     width: 1400px;
@@ -248,26 +250,31 @@ main{
     justify-content: center;
 }
 .build-space{
-    width: 300px;
-    height: 200px;
-    border: 1px solid var(--black);
-    margin-left: 100px;
+    width: 480px;
+    height: 270px;
+    border: 5px solid var(--black);
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 100px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 /* DARK MODE*/
 body.dark-mode{
     background: var(--main-dark-bg-color);
     color: var(--main-dark-font-color)
 }
+body.dark-mode header{
+    background: var(--main-dark-color)
+}
+body.dark-mode .header-nav:hover{
+    background: var(--main-dark-color-light);
+}
 body.dark-mode #options{
     box-shadow: 0 4px 9.5px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(0, 0, 0, 0.5);
-    background: var(--main-dark-bg-color);
-    color: var(--main-dark-font-color)
+    background: var(--main-dark-color);
+    color: var(--main-dark-font-color);
 }
-body.dark-mode .setting-buttons:hover{
-    background: var(--dark-button-hover);
-}
+body.dark-mode .setting-buttons:hover,
 body.dark-mode .setting-icons{
     background: var(--dark-button-icon);
 }
