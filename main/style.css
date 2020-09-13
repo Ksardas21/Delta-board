@@ -116,6 +116,7 @@
     --button-icon: #E4E6EB;
     --button-hover: #F2F2F2;
     --button-icon-hover: #D8DADF;
+    --main-board-bg: #B6D99F;
     --main-dark-bg-color: #181818;
     --main-dark-color: #202020;
     --main-dark-color-light: #383838;
@@ -252,11 +253,14 @@ main{
 .build-space{
     width: 480px;
     height: 270px;
-    border: 5px solid var(--black);
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 100px;
+}
+.img-action{
     border-radius: 10px;
+    background: var(--main-board-bg);
+    cursor: pointer;
 }
 /* DARK MODE*/
 body.dark-mode{
@@ -280,9 +284,6 @@ body.dark-mode .setting-icons{
 }
 body.dark-mode .setting-buttons:hover .setting-icons{
     background: var(--dark-button-icon-hover);
-}
-body.dark-mode .build-space{
-    border:1px solid var(--white);
 }
 body.dark-mode .profile-parameters{
     color: var(--main-dark-font-color);
