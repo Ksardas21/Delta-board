@@ -117,30 +117,31 @@
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff') format('woff'),
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf') format('truetype'),
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.svg#BOG-Light') format('svg');font-weight:300;font-style:normal;font-display:swap;}
-:root {
-    --main-bg-color: #F9F9F9;
-    --main-color: #650AED;
-    --main-color-light: #6D0BFF;
-    --main-font-color: #333333;
-    --white: #FFFFFF;
-    --black: #000000;
-    --button-icon: #E4E6EB;
-    --button-hover: #F2F2F2;
-    --button-icon-hover: #D8DADF;
-    --main-board-bg: #B6D99F;
-    --main-dark-bg-color: #181818;
-    --main-dark-color: #202020;
-    --main-dark-color-light: #383838;
-    --main-dark-font-color:  #ECF0F1;
-    --dark-button-icon: #333336;
-    --dark-button-icon-hover: #4C4C4C;
-}
+    :root {
+        --main-bg-color: #F9F9F9;
+        --main-footer-color: #EDF1F3;
+        --main-color: #650AED;
+        --main-color-light: #6D0BFF;
+        --main-font-color: #333333;
+        --white: #FFFFFF;
+        --black: #000000;
+        --button-icon: #E4E6EB;
+        --button-hover: #F2F2F2;
+        --button-icon-hover: #D8DADF;
+        --main-board-bg: #B6D99F;
+        --main-dark-bg-color: #181818;
+        --main-dark-color: #202020;
+        --main-dark-color-light: #383838;
+        --main-dark-font-color:  #ECF0F1;
+        --dark-button-icon: #333336;
+        --dark-button-icon-hover: #4C4C4C;
+    }
 html{
     scroll-behavior: smooth;
 }
 body{
     height: 100%;
-    color: #333333;
+    color: var(--main-font-color);
     font-weight: 700;
     background: #F9F9F9;
     font-family: BOG, sans-serif;
@@ -154,7 +155,8 @@ header{
     height: 60px;
     display: flex;
     justify-content: center;
-    background: #650aed
+    background: var(--main-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1)
 }
 .headerSection{
     width: 1400px;
@@ -184,18 +186,20 @@ header{
     font-size: 15px;
     width: 135px;
     line-height: 35px;
-    background: #ffffff;
+    background: var(--white);
     text-align: center;
     border-radius: 10px;
-    border: 2.5px solid #333333;
+    border: 2.5px solid var(--main-font-color);
     box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
     text-decoration: none;
-    color: #333333;
+    color: var(--main-font-color);
 }
 main{
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    min-height: 300px;
+    height: calc(100vh - 200px);
 }
 .mainSection{
     margin-left:2.5%;
@@ -220,14 +224,14 @@ input{
     margin-top: 5px;
     width: 320px;
     height: 28.5px;
-    background: #ffffff;
+    background: var(--white);
     text-align: start;
     padding-left: 5px;
     border-radius: 5px;
-    border: 2.5px solid #333333;
+    border: 2.5px solid var(--main-font-color);
     box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
     text-decoration: none;
-    color: #333333;
+    color: var(--main-font-color);
 }
 .submitDiv{
     display: flex;
@@ -240,19 +244,37 @@ input{
     border-radius: 10px;
     width: 150px;
     font-family: BOG;
-    background: #650aed;
-    color: #fff;
+    background: var(--main-color);
+    color: var(--white);
     font-weight: 500;
     cursor: pointer;
     margin-top: 15px;
 }
 footer{
     position: absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
 }
 .footer-section{
-    background: #EDF1F3;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--main-footer-color);
     height: 100px;
+}
+@media(max-width: 350px){
+    form{
+        width: 93vw;
+    }
+    input{
+        width: 90vw;
+    }
+    .logo{
+        min-width: 45px;
+        width: 19vw;
+    }
+    .entrance{
+        font-size: 4vw;
+        width: 34vw;
+    }
 }

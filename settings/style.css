@@ -220,6 +220,7 @@ header{
     visibility: visible;
     top: 65px; 
     opacity: 1;
+    z-index: 100;
 }
 .profile-parameters{
     font-family: BOG Headline;
@@ -254,7 +255,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 75px;
-    height:100vh;
+    height: calc(100vh - 175px);
 }
 .main-section{
     margin-left:2.5%;
@@ -300,6 +301,7 @@ main{
     max-width: 200px;
     min-width: 100px;
     width: 50%;
+    margin-left: 2.5%;
 }
 .content-variable{
     display: inline-block;
@@ -313,6 +315,7 @@ main{
     display: inline-block;
     color: var(--main-blue-color);
     width: auto;
+    margin-right: 2.5%;
 }
 footer{
     position: absolute;
@@ -337,6 +340,7 @@ footer{
         left: 40%;
         width: auto;
         margin-top: 25px;
+        margin-right: 0;
     }
     .content-name{
         max-width: 26vw;
@@ -347,6 +351,12 @@ footer{
         padding-top: 1.5vw;
         height: 50px;
         align-items: flex-start;
+    }
+}
+@media(max-width: 350px){
+    .logo{
+        min-width: 45px;
+        width: 19vw;
     }
 }
     
