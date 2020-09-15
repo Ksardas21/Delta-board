@@ -222,6 +222,7 @@ header{
 }
 .profile-parameters{
     font-family: BOG Headline;
+    text-decoration: none;
 }
 .setting-buttons{
     display: flex;
