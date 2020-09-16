@@ -1,147 +1,114 @@
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
-    @font-face{font-family:'MarkGEO';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.svg#MarkGEO-Regular') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot?#iefix') format('embedded-opentype');font-weight:normal;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEO';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.svg#MarkGEO-Light') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot?#iefix') format('embedded-opentype');font-weight:300;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEO';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.svg#MarkGEO-Medium') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot?#iefix') format('embedded-opentype');font-weight:500;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEOCAPS';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.svg#MarkGEOCAPS-Light') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot?#iefix') format('embedded-opentype');font-weight:300;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEOCAPS';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.svg#MarkGEOCAPS-Regular') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot?#iefix') format('embedded-opentype');font-weight:normal;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEOCAPS';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.svg#MarkGEOCAPS-Medium') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot?#iefix') format('embedded-opentype');font-weight:500;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEOCAPS';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.svg#MarkGEOCAPS-SemiBold') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot?#iefix') format('embedded-opentype');font-weight:600;font-style:normal;font-display:swap;}
-    @font-face{font-family:'MarkGEOCAPS';src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot');src:url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.svg#MarkGEOCAPS-Bold') format('svg'),
-    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot?#iefix') format('embedded-opentype');font-weight:bold;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.svg#BOG-Black') format('svg');font-weight:900;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.svg#BOG-Bold') format('svg');font-weight:bold;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.svg#BOG-Headline-Medium') format('svg');font-weight:500;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.svg#BOG-Regular') format('svg');font-weight:normal;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.svg#BOG-Headline-Black') format('svg');font-weight:900;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.svg#BOG-Medium') format('svg');font-weight:500;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.svg#BOG-Headline-Regular') format('svg');font-weight:normal;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.svg#BOG-Headline-Light') format('svg');font-weight:300;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.svg#BOG-Headline-UltraBold') format('svg');font-weight:800;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.svg#BOG-Headline-SemiBold') format('svg');font-weight:600;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.svg#BOG-Headline-Bold') format('svg');font-weight:bold;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff2') format('woff2'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.svg#BOG-SemiBold') format('svg');font-weight:600;font-style:normal;font-display:swap;}
-    @font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot');src:
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot?#iefix') format('embedded-opentype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff2') format('woff2'),
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot?#iefix') format('embedded-opentype'),
     url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff') format('woff'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf') format('truetype'),
-    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.svg#BOG-Light') format('svg');font-weight:300;font-style:normal;font-display:swap;}
-    :root {
-        --main-bg-color: #F9F9F9;
-        --main-footer-color: #EDF1F3;
-        --main-color: #650AED;
-        --main-color-light: #6D0BFF;
-        --main-font-color: #333333;
-        --white: #FFFFFF;
-        --black: #000000;
-        --button-icon: #E4E6EB;
-        --button-hover: #F2F2F2;
-        --button-icon-hover: #D8DADF;
-        --main-board-bg: #B6D99F;
-        --main-dark-bg-color: #181818;
-        --main-dark-color: #202020;
-        --main-dark-color-light: #383838;
-        --main-dark-font-color:  #ECF0F1;
-        --dark-button-icon: #333336;
-        --dark-button-icon-hover: #4C4C4C;
-    }
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf') format('truetype');
+    font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf') format('truetype');
+    font-weight: 400;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.ttf') format('truetype');
+    font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf') format('truetype');
+    font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.ttf') format('truetype');
+    font-weight: 700;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.ttf') format('truetype');
+    font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.ttf') format('truetype');
+    font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.ttf') format('truetype');
+    font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf') format('truetype');
+    font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.ttf') format('truetype');
+    font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.ttf') format('truetype');
+    font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.ttf') format('truetype');
+    font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'BOG Headline';src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot');
+    src:url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.ttf') format('truetype');
+    font-weight:900;font-style:normal;font-display:swap;}
+:root {
+    --background: #F9F9F9;
+    --footer: #EDF1F3;
+    --purple: #650AED;
+    --purple-lighter: #6D0BFF;
+    --font: #333333;
+    --white: #FFF;
+    --black: #000;
+    --icon: #E4E6EB;
+    --button-hover: #F2F2F2;
+    --icon-hover: #D8DADF;
+    --board: #B6D99F;
+    --background-dark: #181818;
+    --dark: #202020;
+    --dark-lighter: #383838;
+    --font-dark:  #ECF0F1;
+    --icon-dark: #333336;
+    --icon-hover-dark: #4C4C4C;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purplee: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --darker: #343a40;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     height: 100%;
-    color: var(--main-font-color);
+    color: var(--font);
     font-weight: 700;
     background: #F9F9F9;
     font-family: BOG, sans-serif;
@@ -155,8 +122,7 @@ header{
     height: 60px;
     display: flex;
     justify-content: center;
-    background: var(--main-color);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1)
+    background: var(--purple);
 }
 .headerSection{
     width: 1400px;
@@ -166,7 +132,6 @@ header{
 }
 .logoIndex{
     margin-left: 2.5%;
-    
 }
 .logo{
     display: flex;
@@ -188,11 +153,9 @@ header{
     line-height: 35px;
     background: var(--white);
     text-align: center;
-    border-radius: 10px;
-    border: 2.5px solid var(--main-font-color);
-    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
+    border-radius: 7.5px;
     text-decoration: none;
-    color: var(--main-font-color);
+    color: var(--font);
 }
 main{
     display: flex;
@@ -228,10 +191,10 @@ input{
     text-align: start;
     padding-left: 5px;
     border-radius: 5px;
-    border: 2.5px solid var(--main-font-color);
+    border: 2.5px solid var(--font);
     box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
     text-decoration: none;
-    color: var(--main-font-color);
+    color: var(--font);
 }
 .submitDiv{
     display: flex;
@@ -244,7 +207,7 @@ input{
     border-radius: 10px;
     width: 150px;
     font-family: BOG;
-    background: var(--main-color);
+    background: var(--purple);
     color: var(--white);
     font-weight: 500;
     cursor: pointer;
@@ -259,7 +222,7 @@ footer{
     position: absolute;
     left: 0;
     width: 100%;
-    background: var(--main-footer-color);
+    background: var(--footer);
     height: 100px;
 }
 @media(max-width: 350px){
