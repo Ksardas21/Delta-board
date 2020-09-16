@@ -222,7 +222,6 @@ header{
 }
 .profile-parameters{
     font-family: BOG Headline;
-    text-decoration: none;
 }
 .setting-buttons{
     display: flex;
@@ -231,6 +230,7 @@ header{
     cursor: pointer;
     border-radius: 5px;
     padding: 0 5px 0 5px;
+    text-decoration: none;
 }
 .setting-buttons:hover{
     background: var(--button-hover);

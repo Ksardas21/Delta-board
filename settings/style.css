@@ -226,6 +226,7 @@ header{
     font-family: BOG Headline;
 }
 .setting-buttons{
+    text-decoration: none;
     display: flex;
     align-items: center;
     height: 35px;
@@ -249,7 +250,6 @@ header{
 }
 .profile-parameters{
     color: var(--main-font-color);
-    text-decoration: none;
 }
 main{
     display: flex;
