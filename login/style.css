@@ -81,6 +81,7 @@
     --font-dark:  #ECF0F1;
     --icon-dark: #333336;
     --icon-hover-dark: #4C4C4C;
+    --border: #dddfe2;
     --blue: #007bff;
     --indigo: #6610f2;
     --purplee: #6f42c1;
@@ -102,6 +103,9 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --darker: #343a40;
+    --green-primary: #42b72a;
+    --blue-primary: #166fe5;
+    --blue-secondary: #E7F3FF;
 }
 html{
     scroll-behavior: smooth;
@@ -110,7 +114,7 @@ body{
     height: 100%;
     color: var(--font);
     font-weight: 700;
-    background: #F9F9F9;
+    background: var(--background);
     font-family: BOG, sans-serif;
     transition: ease-out 250ms;
 }
@@ -184,17 +188,23 @@ form{
     margin-top: 10vw;
 }
 input{
-    margin-top: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 6px;
     width: 320px;
-    height: 28.5px;
+    height: 36px;
     background: var(--white);
     text-align: start;
     padding-left: 5px;
-    border-radius: 5px;
-    border: 2.5px solid var(--font);
-    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
+    border-radius: 7.5px;
+    border: 1px solid var(--border);
     text-decoration: none;
     color: var(--font);
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+input:focus{
+    box-shadow: 0 0 0 2px var(--blue-secondary);
+    border: 1px solid var(--blue-primary);
 }
 .submitDiv{
     display: flex;

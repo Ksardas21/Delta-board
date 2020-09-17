@@ -81,6 +81,7 @@
     --font-dark:  #ECF0F1;
     --icon-dark: #333336;
     --icon-hover-dark: #4C4C4C;
+    --border: #dddfe2;
     --blue: #007bff;
     --indigo: #6610f2;
     --purplee: #6f42c1;
@@ -195,7 +196,7 @@ input{
     text-align: start;
     padding-left: 5px;
     border-radius: 7.5px;
-    border: 1px solid #dddfe2;
+    border: 1px solid var(--border);
     text-decoration: none;
     color: var(--font);
     -webkit-appearance: none;
