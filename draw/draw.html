@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Ksardas</title>
+    <script src="//unpkg.com/brain.js"></script> 
+
+	<style>
+	</style>
+</head>
+<body>
+	<div class="div">
+        <canvas id="canv" style="display: block;">Ваш браузер устарел, обновитесь.</canvas>
+        <br /><br />
+        <button onclick="d.clear();return false;">Clear Area</button>
+		Line width : 
+		<select id="selWidth">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9" selected="selected">9</option>
+            <option value="11">11</option>
+        </select> 
+		Color : 
+		<select id="selColor">
+            <option value="black">black</option>
+            <option value="blue" selected="selected">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+        </select>&nbsp;&nbsp;&nbsp;
+        <button onclick="javascript:cUndo();return false;">Undo</button>
+        <button onclick="javascript:cRedo();return false;">Redo</button>
+    </div>
+	<script>
+		function DCanvas(el)
+		{
+			const ctx = el.getContext('2d');
+			const pixel = 20;
+
+			let is_mouse_down = false;
+
+			canv.width = 550;
+			canv.height = 500;
+
+			this.clear = function() {
+				ctx.clearRect(0, 0, canv.width, canv.height);
+			}
+			
+			el.addEventListener('mousedown', function(e) {
+				is_mouse_down = true;
+				ctx.beginPath();
+			})
+
+			el.addEventListener('mouseup', function(e) {
+				is_mouse_down = false;
+			})
+
+			el.addEventListener('mousemove', function(e) {
+				if( is_mouse_down ){
+					ctx.fillStyle = 'red';
+					ctx.strokeStyle = 'red';
+					ctx.lineWidth = document.getElementById('selWidth').val();
+
+					ctx.lineTo(e.offsetX, e.offsetY);
+					ctx.stroke();
+
+					ctx.beginPath();
+					ctx.arc(e.offsetX, e.offsetY, pixel / 2, 0, Math.PI * 2);
+					ctx.fill();
+
+					ctx.beginPath();
+					ctx.moveTo(e.offsetX, e.offsetY);
+				}
+			})
+		}
+		const d = new DCanvas(document.getElementById('canv'));
+
+		document.addEventListener('keypress', function(e) {
+			if( e.key.toLowerCase() == 'c' ){
+				d.clear();
+			}
+		});
+	</script>
+
+</body>
+</html>
